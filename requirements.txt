@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+nltk
+zhipuai
+openpyxl
+python-dotenv
