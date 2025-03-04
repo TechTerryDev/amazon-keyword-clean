@@ -25,7 +25,7 @@ cp .env.example .env
 - 替换 `.env` 文件中的 `ZHIPUAI_API_KEY`
 
 ### 3. 准备数据
-- 将数据文件重命名为 `data.xlsx` 并上传项目根目录
+- 将下载的拓展关键词xlsx表格，上传项目根目录
 
 ### 4. 运行程序
 - 点击界面顶部的 "Run" 按钮
