@@ -9,6 +9,7 @@ from zhipuai import ZhipuAI
 import random
 from dotenv import load_dotenv
 import os
+import glob
 
 # 加载环境变量
 load_dotenv()
@@ -26,8 +27,7 @@ THRESHOLD = float(os.getenv('THRESHOLD', '0.3'))
 NUM_CLUSTERS = int(os.getenv('NUM_CLUSTERS', '10'))
 
 # 第一部分：清洗表格
-# 读取Excel文件
-file_path = 'data.xlsx'
+file_path = glob.glob('*.xlsx')[0]  # 获取当前目录第一个xlsx文件
 xls = pd.ExcelFile(file_path)
 
 # 保留第一个sheet, 读取数据时不使用默认标题行
